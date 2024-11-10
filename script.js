@@ -1,5 +1,5 @@
 console.log("Dobar den");
-
+// Password, door code
 var doorCode = 6789;
 
 if (doorCode == 6789) {
@@ -46,7 +46,7 @@ fizzBuzz(24);
 console.log();
 
 
-
+// Pozdravuvanja
 var hour = 20;
  if(hour < 12) {
     console.log('Dobro utro');
@@ -56,6 +56,7 @@ var hour = 20;
     console.log('Dobra vecer');
  }
 
+ // Prva ili vtora smena vo uciliste
  var cas = 15;
  if(cas >= 7 && cas <= 12) {
     console.log('Prva smena vo uciliste');
@@ -63,8 +64,9 @@ var hour = 20;
     console.log('Vtora smena vo uciliste');
  } else { console.log('Doma sme');}
 
-var x = 5;
 
+ // On/Off
+var x = 5;
  switch(x) {
     case 0:
         console.log('Ligts ON');
@@ -75,3 +77,52 @@ var x = 5;
     default: 
         console.log('ERROR');
  }
+// Boduvanje oceni
+ var bodovi = 30;
+ if(bodovi >= 51 && bodovi <= 60){
+    console.log('6');
+ } else if (bodovi>=61 && bodovi <=70) {
+    console.log('7');
+ } else if (bodovi>=71 && bodovi <=80) {
+    console.log('8');
+ } else if (bodovi>=81 && bodovi <=90) {
+    console.log('9');
+ } else if (bodovi>=91 && bodovi <=100) {
+    console.log('10');
+ } else {
+    console.log('5');
+ }
+
+ // Star rating
+ var rating = 3;
+  if(rating <= 2){
+    console.log('Bad rating');
+  } else if(rating >= 4){
+    console.log('Good rating');
+  } else {
+    console.log('Average rating');
+  }
+
+// Vremenska prognoza
+  var stepeni = 5;
+
+  if (stepeni <= 0 ) {
+    console.log('Nadvor e ladno, ima ${stepeni} stepeni i mrzne');
+  } else if (stepeni > 0 && stepeni < 15 ) {
+    console.log('Nadvor e ladno i oblacno, ima ${stepeni} stepeni');
+  } else if (stepeni >=16 && stepeni < 25 ) {
+    console.log('Nadvor e soncevo i ptijatno, ima ${stepeni} stepeni');
+  } else if (stepeni >=25 && stepeni < 30 ) {
+    console.log('Nadvor e soncevo i toplo, ima ${stepeni} stepeni');
+  } else if (stepeni >= 30 && stepeni < 50 ) {
+    console.log('Nadvor e soncevo i zesko, ima ${stepeni} stepeni');
+  } 
+
+  // Age for driving license
+  var age = 20;
+
+  if (age < 16) {
+    console.log('Sorry, you are to young to drive.');
+  } else {
+    console.log('Qualifies for driving');
+  }
